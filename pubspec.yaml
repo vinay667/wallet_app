@@ -51,19 +51,17 @@ flutter:
     - images/wallet_cover.png
     - images/zara.png
     - images/hamberg.png
-
-
   fonts:
     - family: IBMPlexSans
       fonts:
         - asset: fonts/ibmplexsans_light.ttf
 
     - family: IBMPlexSansMedium
-        fonts:
+      fonts:
         - asset: fonts/ibmplexsans_medium.ttf
 
     - family: IBMPlexSansSemiBold
-        fonts:
+      fonts:
         - asset: fonts/ibmplexsans_semibold.ttf
 
 
