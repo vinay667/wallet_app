@@ -14,9 +14,9 @@ class CustomToolbar extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Container(
-                  padding: EdgeInsets.only(left: 0),
+                  padding: EdgeInsets.only(left: 5),
                   child:
-                      Image.asset('images/hamberg.png', width: 20, height: 15)),
+                      Image.asset('images/back_icon.png', width: 14, height: 9,color: Colors.white,)),
               flex: 1,
             ),
             Expanded(

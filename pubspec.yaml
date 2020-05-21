@@ -23,6 +23,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  barcode_scan: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +52,21 @@ flutter:
     - images/wallet_cover.png
     - images/zara.png
     - images/hamberg.png
+    - images/curve_top.png
+    - images/rounded_rect.png
+    - images/rounded_rect_blue.png
+    - images/currency.png
+    - images/barcode_box.png
+    - images/dummy_barcode.png
+    - images/scanner_start.png
+    - images/rounded_side.png
+    - images/back_icon.png
+    - images/blue_rect.png
+    - images/drinks.png
+    - images/border_rect.png
+    - images/profile_curve.png
+    - images/edit.png
+    - images/profile_rect.png
   fonts:
     - family: IBMPlexSans
       fonts:
@@ -63,6 +79,15 @@ flutter:
     - family: IBMPlexSansSemiBold
       fonts:
         - asset: fonts/ibmplexsans_semibold.ttf
+
+
+    - family: GilroyBold
+      fonts:
+        - asset: fonts/gilroy_bold.otf
+
+    - family: GilroySemiBold
+      fonts:
+        - asset: fonts/gilroy_semibold.otf
 
 
   # To add assets to your application, add an assets section, like this:
