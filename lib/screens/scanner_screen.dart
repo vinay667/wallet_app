@@ -57,7 +57,7 @@ class ScannerScreenState extends State<ScannerScreen> {
           height: double.infinity,
           child: Column(
             children: <Widget>[
-              CurveTooblarWidget('Scanner'),
+              CurveTooblarWidget('Scanner',context),
               SizedBox(height: 50),
               Container(
                 width: 173,

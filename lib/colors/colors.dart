@@ -29,4 +29,8 @@ class MyColor {
   static const darkBlue = Color.fromRGBO(43,6,92,1);
   static const green = Color.fromRGBO(31,223,126,1);
   static const blueTextColor = Color.fromRGBO(0,1,73,1);
+  static const switchBarColor = Color.fromRGBO(228,239,251,1);
+  static const switchColor = Color.fromRGBO(21,146,83,1);
+  static const conColor = Color.fromRGBO(248,241,255,1);
+  static const greenConColor = Color.fromRGBO(97,175,136,1);
 }

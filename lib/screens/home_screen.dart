@@ -4,11 +4,12 @@ import 'package:walletapp/colors/colors.dart';
 import 'package:walletapp/screens/add_money_screen.dart';
 import 'package:walletapp/screens/gift_card_screen.dart';
 import 'package:walletapp/screens/profile_screen.dart';
+import 'package:walletapp/screens/saved_cards_screen.dart';
 import 'package:walletapp/screens/scanner_screen.dart';
+import 'package:walletapp/screens/settings_screen.dart';
+import 'package:walletapp/screens/statistics_screen.dart';
 import 'package:walletapp/screens/wallet_transactions_screen.dart';
 import 'package:walletapp/widgets/side_menu_text_widget.dart';
-import 'package:walletapp/widgets/toolbar_widget.dart';
-
 class WalletHomeScreen extends StatefulWidget {
   WalletHomeState createState() => WalletHomeState();
 }
@@ -174,10 +175,9 @@ class WalletHomeState extends State<WalletHomeScreen> {
                       child: ListTile(
                         title: SideMenuTextWidget('Save cards'),
                         onTap: () {
-                          //  Navigator.of(context).push(_createRoute());
+                        Navigator.push(context, CupertinoPageRoute(builder: (context)=>SavedCardScreen()));
 
-                          // Update the state of the app.
-                          // ...
+
                         },
                       ),
 
@@ -222,10 +222,7 @@ class WalletHomeState extends State<WalletHomeScreen> {
                       child: ListTile(
                         title: SideMenuTextWidget('Statistics'),
                         onTap: () {
-                          //  Navigator.of(context).push(_createRoute());
-
-                          // Update the state of the app.
-                          // ...
+                         Navigator.push(context, CupertinoPageRoute(builder: (context)=>StatisticsScreen()));
                         },
                       ),
 
@@ -237,10 +234,10 @@ class WalletHomeState extends State<WalletHomeScreen> {
                       child: ListTile(
                         title: SideMenuTextWidget('Settings'),
                         onTap: () {
-                          //  Navigator.of(context).push(_createRoute());
 
-                          // Update the state of the app.
-                          // ...
+                          Navigator.push(context, CupertinoPageRoute(builder: (context)=>SettingsScreen()));
+
+
                         },
                       ),
 

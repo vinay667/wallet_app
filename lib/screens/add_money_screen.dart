@@ -15,7 +15,7 @@ class AddMoneyState extends State<AddMoneyScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            CurveTooblarWidget('Add Money'),
+            CurveTooblarWidget('Add Money',context),
             SizedBox(height: 15),
             Expanded(
                 child: ListView(

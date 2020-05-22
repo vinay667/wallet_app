@@ -2,8 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomToolbar extends StatelessWidget {
-  CustomToolbar(this.text);
+  CustomToolbar(this.text, this.context);
+
   final String text;
+  final BuildContext context;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,10 +16,19 @@ class CustomToolbar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Expanded(
-              child: Container(
-                  padding: EdgeInsets.only(left: 5),
-                  child:
-                      Image.asset('images/back_icon.png', width: 14, height: 9,color: Colors.white,)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.pop(context, true);
+                },
+                child: Container(
+                    padding: EdgeInsets.all(5),
+                    child: Image.asset(
+                      'images/back_icon.png',
+                      width: 14,
+                      height: 9,
+                      color: Colors.white,
+                    )),
+              ),
               flex: 1,
             ),
             Expanded(

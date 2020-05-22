@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:walletapp/colors/colors.dart';
@@ -105,70 +104,47 @@ class ProfileState extends State<ProfileScreen> {
                 )
               ],
             ),
-
             SizedBox(height: 25),
-
             Padding(
-              padding: EdgeInsets.only(left: 15,right: 15),
-              child: ProfileWidget('Name:','Mark Jackson',false),
+              padding: EdgeInsets.only(left: 15, right: 15),
+              child: ProfileWidget('Name:', 'Mark Jackson', false),
             ),
-
             Padding(
-              padding: EdgeInsets.only(left: 15,right: 15),
-              child: ProfileWidget('Phone No:', '+91 8976543212',false),
+              padding: EdgeInsets.only(left: 15, right: 15),
+              child: ProfileWidget('Phone No:', '+91 8976543212', false),
             ),
-
             Padding(
-              padding: EdgeInsets.only(left: 15,right: 15),
-              child: ProfileWidget('Email Id:', 'mark_jackson@gamil.com',false),
+              padding: EdgeInsets.only(left: 15, right: 15),
+              child:
+                  ProfileWidget('Email Id:', 'mark_jackson@gamil.com', false),
             ),
-
             Padding(
-              padding: EdgeInsets.only(left: 15,right: 15),
-              child: ProfileWidget('Phone No:','12345',true),
-
+              padding: EdgeInsets.only(left: 15, right: 15),
+              child: ProfileWidget('Phone No:', '12345', true),
             ),
-            
-            SizedBox(height: 40,),
-            
+            SizedBox(
+              height: 40,
+            ),
             Container(
               height: 44,
-              margin: EdgeInsets.only(left: 15,right: 15),
+              margin: EdgeInsets.only(left: 15, right: 15),
               child: Stack(
                 children: <Widget>[
-                  
                   Image.asset('images/profile_rect.png'),
                   Center(
-                    child: Text('Save Changes',style: TextStyle(fontSize: 15,color: Colors.white,fontFamily: 'GilroySemiBold'),),
-
-
+                    child: Text(
+                      'Save Changes',
+                      style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontFamily: 'GilroySemiBold'),
+                    ),
                   )
-
-
-
-
-
-                  
-                  
-                  
                 ],
-                
-                
               ),
-              
-              
-              
-            )
-            
-            
-            
+            ),
 
-
-
-
-
-
-
+            SizedBox(height: 20,)
 
 
           ],

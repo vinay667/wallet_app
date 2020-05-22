@@ -6,8 +6,9 @@ import 'package:walletapp/widgets/toolbar_widget.dart';
 
 class CurveTooblarWidget extends StatelessWidget
 {
-  CurveTooblarWidget(this.toolbarText);
+  CurveTooblarWidget(this.toolbarText,this.context);
   final String toolbarText;
+  final BuildContext context;
   @override
   Widget build(BuildContext context) {
 
@@ -24,7 +25,7 @@ class CurveTooblarWidget extends StatelessWidget
          ),
          Padding(
            padding: EdgeInsets.only(top: 5),
-           child: CustomToolbar(toolbarText),
+           child: CustomToolbar(toolbarText,context),
          )
        ],
      ),

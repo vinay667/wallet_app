@@ -67,6 +67,14 @@ flutter:
     - images/profile_curve.png
     - images/edit.png
     - images/profile_rect.png
+    - images/change_pass_icon.png
+    - images/payments.png
+    - images/account.png
+    - images/circle_black.png
+    - images/right_arrow.png
+    - images/credit_card.png
+    - images/add_card.png
+    - images/right_circle.png
   fonts:
     - family: IBMPlexSans
       fonts:

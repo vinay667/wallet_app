@@ -19,7 +19,7 @@ class GiftCardState extends State<GiftCardScreen>
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            CurveTooblarWidget('Gift Card'),
+            CurveTooblarWidget('Gift Card',context),
             SizedBox(height: 30,),
             Padding(
               padding: EdgeInsets.only(left: 15,right: 15),
