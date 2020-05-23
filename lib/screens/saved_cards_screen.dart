@@ -134,7 +134,7 @@ class SavedCardsState extends State<SavedCardScreen> {
                           padding:
                               EdgeInsets.only(left: 10, right: 10, bottom: 5),
                           child: Card(
-                            elevation: 5,
+                            elevation: 3,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5),
                             ),

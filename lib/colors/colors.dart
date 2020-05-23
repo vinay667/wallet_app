@@ -33,4 +33,12 @@ class MyColor {
   static const switchColor = Color.fromRGBO(21,146,83,1);
   static const conColor = Color.fromRGBO(248,241,255,1);
   static const greenConColor = Color.fromRGBO(97,175,136,1);
+  static const greenColorLight = Color.fromRGBO(219,243,230,1);
+  static const redColorLight = Color.fromRGBO(251,224,224,1);
+  static const darkGreen = Color.fromRGBO(95,207,96,1);
+  static const darkRed = Color.fromRGBO(209,69,69,1);
+  static const softBlack = Color.fromRGBO(44,55,63,1);
+  static const topGreen = Color.fromRGBO(94,206,95,1);
+  static const topRed = Color.fromRGBO(253,67,64,1);
+  static const rectanColor = Color.fromRGBO(249,252,255,1);
 }

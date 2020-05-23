@@ -66,7 +66,7 @@ class TransactionsState extends State<WalletTransactionsScreen> {
                               padding: EdgeInsets.only(
                                   left: 10, right: 10, bottom: 7),
                               child: Card(
-                                elevation: 8,
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
                                 ),
