@@ -51,7 +51,6 @@ class CustomToolbar extends StatelessWidget {
                   width: 34.3,
                   margin: EdgeInsets.only(right: 10),
                   decoration: new BoxDecoration(
-                      color: Colors.yellow,
                       shape: BoxShape.circle,
                       image: new DecorationImage(
                           fit: BoxFit.fill,

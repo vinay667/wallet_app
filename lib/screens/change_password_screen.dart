@@ -18,6 +18,7 @@ class ChangePasswordState extends State<ChangePasswordScreen>
   Widget build(BuildContext context) {
 
     return Scaffold(
+      backgroundColor: MyColor.whiteColor,
       body: SafeArea(
         child:Column(
           children: <Widget>[

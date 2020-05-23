@@ -175,7 +175,7 @@ class WalletHomeState extends State<WalletHomeScreen> {
                       child: ListTile(
                         title: SideMenuTextWidget('Save cards'),
                         onTap: () {
-                        Navigator.push(context, CupertinoPageRoute(builder: (context)=>SavedCardScreen()));
+                          Navigator.push(context, CupertinoPageRoute(builder: (context)=>SavedCardScreen()));
 
 
                         },
@@ -222,7 +222,7 @@ class WalletHomeState extends State<WalletHomeScreen> {
                       child: ListTile(
                         title: SideMenuTextWidget('Statistics'),
                         onTap: () {
-                         Navigator.push(context, CupertinoPageRoute(builder: (context)=>StatisticsScreen()));
+                          Navigator.push(context, CupertinoPageRoute(builder: (context)=>StatisticsScreen()));
                         },
                       ),
 
