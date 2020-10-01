@@ -39,7 +39,7 @@ class SavedCardsState extends State<SavedCardScreen> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            CurveTooblarWidget('Save Cards',context),
+            CurveTooblarWidget('Save Cards', context),
             SizedBox(height: 20),
             Expanded(
               child: ListView(

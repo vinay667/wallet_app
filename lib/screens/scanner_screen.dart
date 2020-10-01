@@ -19,7 +19,8 @@ class ScannerScreen extends StatefulWidget {
 }
 
 class ScannerScreenState extends State<ScannerScreen> {
-  String result = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
+  String result =
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
 
   Future _scanQR() async {
     try {
@@ -53,11 +54,10 @@ class ScannerScreenState extends State<ScannerScreen> {
     return Scaffold(
       body: SafeArea(
         child: Container(
-
           height: double.infinity,
           child: Column(
             children: <Widget>[
-              CurveTooblarWidget('Scanner',context),
+              CurveTooblarWidget('Scanner', context),
               SizedBox(height: 50),
               Container(
                 width: 173,
@@ -85,16 +85,13 @@ class ScannerScreenState extends State<ScannerScreen> {
               ),
               Expanded(
                 child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: GestureDetector(
-                    onTap: (){
-                      _scanQR();
-                    },
-
-                    child: Image.asset('images/scanner_start.png'),
-
-                  )
-                ),
+                    alignment: Alignment.bottomCenter,
+                    child: GestureDetector(
+                      onTap: () {
+                        _scanQR();
+                      },
+                      child: Image.asset('images/scanner_start.png'),
+                    )),
               ),
               SizedBox(height: 20)
             ],

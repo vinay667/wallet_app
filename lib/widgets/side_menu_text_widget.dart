@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SideMenuTextWidget extends StatelessWidget
-{
+class SideMenuTextWidget extends StatelessWidget {
   SideMenuTextWidget(this.text);
+
   final String text;
 
   @override
@@ -16,12 +16,5 @@ class SideMenuTextWidget extends StatelessWidget
           decoration: TextDecoration.none,
           fontFamily: 'GilroySemiBold'),
     );
-
-
-
-
-
   }
-
-
 }

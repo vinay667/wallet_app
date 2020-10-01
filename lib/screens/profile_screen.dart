@@ -6,6 +6,7 @@ import 'package:walletapp/widgets/profile_widget.dart';
 class ProfileScreen extends StatefulWidget {
   ProfileState createState() => ProfileState();
 }
+
 class ProfileState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
@@ -26,19 +27,17 @@ class ProfileState extends State<ProfileScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         InkWell(
-                          onTap: (){
-                            Navigator.pop(context,true);
+                          onTap: () {
+                            Navigator.pop(context, true);
                           },
                           child: Container(
-                              padding: EdgeInsets.all( 15),
+                              padding: EdgeInsets.all(15),
                               child: Image.asset(
                                 'images/back_icon.png',
                                 width: 14,
                                 height: 9,
                                 color: Colors.white,
                               )),
-
-
                         ),
                         Expanded(
                           child: Text(
@@ -51,10 +50,7 @@ class ProfileState extends State<ProfileScreen> {
                                 fontFamily: 'IBMPlexSansMedium'),
                           ),
                         ),
-
-                        SizedBox(width:50)
-
-
+                        SizedBox(width: 50)
                       ],
                     )),
                 Center(
@@ -153,10 +149,9 @@ class ProfileState extends State<ProfileScreen> {
                 ],
               ),
             ),
-
-            SizedBox(height: 20,)
-
-
+            SizedBox(
+              height: 20,
+            )
           ],
         ),
       ),

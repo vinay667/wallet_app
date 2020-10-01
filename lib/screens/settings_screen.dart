@@ -18,16 +18,15 @@ class SettingState extends State<SettingsScreen> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            CurveTooblarWidget('Settings',context),
+            CurveTooblarWidget('Settings', context),
             SizedBox(height: 20),
             GestureDetector(
-              onTap: (){
-
-                Navigator.push(context, CupertinoPageRoute(builder: (context)=>ChangePasswordScreen()));
-
-
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                        builder: (context) => ChangePasswordScreen()));
               },
-
               child: Padding(
                 padding: EdgeInsets.only(left: 15, right: 15),
                 child: Card(
@@ -88,8 +87,6 @@ class SettingState extends State<SettingsScreen> {
                   ),
                 ),
               ),
-
-
             ),
             SizedBox(height: 10),
             Padding(

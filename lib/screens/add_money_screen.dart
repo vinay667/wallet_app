@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:walletapp/colors/colors.dart';
 import 'package:walletapp/widgets/curve_toolbar.dart';
+import 'package:walletapp/widgets/texts_widget.dart';
+import 'package:walletapp/widgets/transaction_list_widget.dart';
 
 class AddMoneyScreen extends StatefulWidget {
   AddMoneyState createState() => AddMoneyState();
@@ -15,29 +17,13 @@ class AddMoneyState extends State<AddMoneyScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            CurveTooblarWidget('Add Money',context),
+            CurveTooblarWidget('Add Money', context),
             SizedBox(height: 15),
             Expanded(
                 child: ListView(
               children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(left: 15),
-                  child: Text('CURRENT BALANCE',
-                      style: TextStyle(
-                          fontSize: 10,
-                          color: MyColor.addMoneyFont,
-                          fontFamily: 'IBMPlexSans')),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 15, top: 4),
-                  child: Text(
-                    '₱4521.00',
-                    style: TextStyle(
-                        color: MyColor.violetThemeColor,
-                        fontSize: 22,
-                        fontFamily: 'IBMPlexSansSemiBold'),
-                  ),
-                ),
+                TextWidgetAddMoney(),
+                TextWidgetPrice(),
                 Padding(
                   padding: EdgeInsets.only(left: 15, top: 10, right: 15),
                   child: Card(
@@ -112,30 +98,7 @@ class AddMoneyState extends State<AddMoneyScreen> {
                                 scrollDirection: Axis.horizontal,
                                 itemBuilder:
                                     (BuildContext context, int position) {
-                                  return Padding(
-                                    padding: EdgeInsets.only(left: 10),
-                                    child: Container(
-                                        height: 20,
-                                        width: 55,
-                                        child: Stack(
-                                          children: <Widget>[
-                                            Image.asset(
-                                              'images/rounded_rect.png',
-                                              fit: BoxFit.fill,
-                                            ),
-                                            Center(
-                                              child: Text(
-                                                '₱500',
-                                                style: TextStyle(
-                                                    color: MyColor.orangeFont,
-                                                    fontFamily:
-                                                        'IBMPlexSansMedium',
-                                                    fontSize: 12),
-                                              ),
-                                            )
-                                          ],
-                                        )),
-                                  );
+                                  return TransactionWidget();
                                 }),
                           ),
                           SizedBox(height: 20),
@@ -146,9 +109,7 @@ class AddMoneyState extends State<AddMoneyScreen> {
                 ),
                 SizedBox(height: 25),
                 InkWell(
-                  onTap: () {
-
-                  },
+                  onTap: () {},
                   child: Container(
                     height: 37,
                     padding: EdgeInsets.only(left: 15, right: 15),

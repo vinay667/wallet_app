@@ -35,7 +35,7 @@ class TransactionsState extends State<WalletTransactionsScreen> {
         body: SafeArea(
       child: Column(
         children: <Widget>[
-          CurveTooblarWidget('Transaction History',context),
+          CurveTooblarWidget('Transaction History', context),
           Expanded(
             child: ListView.builder(
                 itemCount: 2,

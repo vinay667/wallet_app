@@ -4,6 +4,7 @@ import 'package:walletapp/colors/colors.dart';
 
 class ProfileWidget extends StatelessWidget {
   ProfileWidget(this.labelText, this.textFieldText, this.isObscure);
+
   final String labelText, textFieldText;
   final bool isObscure;
 
@@ -17,11 +18,11 @@ class ProfileWidget extends StatelessWidget {
           child: Text(
             labelText,
             style: TextStyle(
-                fontSize: 15,
-                color: MyColor.blueTextColor,
-                decoration: TextDecoration.none,
-                fontFamily: 'GilroySemiBold',
-               ),
+              fontSize: 15,
+              color: MyColor.blueTextColor,
+              decoration: TextDecoration.none,
+              fontFamily: 'GilroySemiBold',
+            ),
           ),
         ),
         Padding(

@@ -11,10 +11,10 @@ class StatisticsScreen extends StatefulWidget {
 }
 
 class StatisticsState extends State<StatisticsScreen> {
-  double incomeBoxOpacity=1.0;
-  double expenseBoxOpacity=0.0;
-  String headerText='INCOME';
-  Color graphColor=MyColor.topGreen;
+  double incomeBoxOpacity = 1.0;
+  double expenseBoxOpacity = 0.0;
+  String headerText = 'INCOME';
+  Color graphColor = MyColor.topGreen;
   List<String> monthsList = <String>[
     'JAN',
     'FEB',
@@ -157,82 +157,70 @@ class StatisticsState extends State<StatisticsScreen> {
                   SizedBox(height: 15),
                   Row(
                     children: <Widget>[
-                     InkWell(
-                       onTap:(){
-                         setState(() {
-                           incomeBoxOpacity=1.0;
-                           expenseBoxOpacity=0.0;
-                           headerText='INCOME';
-                           graphColor=MyColor.topGreen;
-
-
-                         });
-
-            },
-                       child:  Container(
-                         height: 64.3,
-                         width: 102,
-                         margin: EdgeInsets.only(left: 15),
-                         decoration: BoxDecoration(
-                             color: MyColor.greenColorLight,
-                             borderRadius: BorderRadius.circular(6.7)),
-                         child: Column(
-                           crossAxisAlignment: CrossAxisAlignment.start,
-                           children: <Widget>[
-                             AnimatedOpacity(
-                               opacity: incomeBoxOpacity,
-                               duration: Duration(seconds: 1),
-                               child: Container(
-                                   height: 4,
-                                   decoration: BoxDecoration(
-                                       color: MyColor.topGreen,
-                                       borderRadius: BorderRadius.only(
-                                           topLeft: Radius.circular(6.7),
-                                           topRight: Radius.circular(6.7)))),
-
-
-                             ),
-                             Padding(
-                               padding: EdgeInsets.only(left: 10, top: 10),
-                               child: Text(
-                                 'INCOME',
-                                 style: TextStyle(
-                                     color: MyColor.darkGreen,
-                                     fontFamily: 'IBMPlexSansSemiBold',
-                                     fontSize: 14),
-                               ),
-                             ),
-                             Padding(
-                               padding: EdgeInsets.only(left: 10),
-                               child: Text(
-                                 '\$150.00',
-                                 maxLines: 1,
-                                 overflow: TextOverflow.ellipsis,
-                                 style: TextStyle(
-                                     color: MyColor.softBlack,
-                                     fontFamily: 'IBMPlexSansSemiBold',
-                                     fontSize: 18),
-                               ),
-                             ),
-                           ],
-                         ),
-                       ),
-
-
-                     ),
                       InkWell(
-                        onTap: (){
-
+                        onTap: () {
                           setState(() {
-
-                            incomeBoxOpacity=0.0;
-                            expenseBoxOpacity=1.0;
-                            headerText='EXPENSE';
-                            graphColor=MyColor.topRed;
-
-
+                            incomeBoxOpacity = 1.0;
+                            expenseBoxOpacity = 0.0;
+                            headerText = 'INCOME';
+                            graphColor = MyColor.topGreen;
                           });
-
+                        },
+                        child: Container(
+                          height: 64.3,
+                          width: 102,
+                          margin: EdgeInsets.only(left: 15),
+                          decoration: BoxDecoration(
+                              color: MyColor.greenColorLight,
+                              borderRadius: BorderRadius.circular(6.7)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              AnimatedOpacity(
+                                opacity: incomeBoxOpacity,
+                                duration: Duration(seconds: 1),
+                                child: Container(
+                                    height: 4,
+                                    decoration: BoxDecoration(
+                                        color: MyColor.topGreen,
+                                        borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(6.7),
+                                            topRight: Radius.circular(6.7)))),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10, top: 10),
+                                child: Text(
+                                  'INCOME',
+                                  style: TextStyle(
+                                      color: MyColor.darkGreen,
+                                      fontFamily: 'IBMPlexSansSemiBold',
+                                      fontSize: 14),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10),
+                                child: Text(
+                                  '\$150.00',
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                      color: MyColor.softBlack,
+                                      fontFamily: 'IBMPlexSansSemiBold',
+                                      fontSize: 18),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            incomeBoxOpacity = 0.0;
+                            expenseBoxOpacity = 1.0;
+                            headerText = 'EXPENSE';
+                            graphColor = MyColor.topRed;
+                          });
                         },
                         child: Container(
                           height: 64.3,
@@ -247,16 +235,13 @@ class StatisticsState extends State<StatisticsScreen> {
                               AnimatedOpacity(
                                 opacity: expenseBoxOpacity,
                                 duration: Duration(seconds: 1),
-                                child:Container(
+                                child: Container(
                                     height: 4,
                                     decoration: BoxDecoration(
                                         color: MyColor.topRed,
                                         borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(6.7),
                                             topRight: Radius.circular(6.7)))),
-
-
-
                               ),
                               Padding(
                                 padding: EdgeInsets.only(left: 10, top: 10),
@@ -283,8 +268,6 @@ class StatisticsState extends State<StatisticsScreen> {
                             ],
                           ),
                         ),
-
-
                       )
                     ],
                   ),
